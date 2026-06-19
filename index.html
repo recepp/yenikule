@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yenikule İnşaat | Modern Mimari ve Güvenilir Yaşam Alanları</title>
+  <meta name="description" content="Yenikule İnşaat; konut, ticari alan ve gayrimenkul projelerinde modern mimari, güvenilir mühendislik ve kaliteli yaşam alanları sunar. 15+ yıl deneyim." />
+  <meta name="keywords" content="inşaat,gayrimenkul,İstanbul,modern mimari,konut projesi,ticari alan" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Yenikule İnşaat | Modern Mimari ve Güvenilir Yaşam Alanları" />
+  <meta property="og:description" content="Yenikule İnşaat; konut, ticari alan ve gayrimenkul projelerinde modern mimari, güvenilir mühendislik ve kaliteli yaşam alanları sunar." />
+  <meta property="og:url" content="https://yenikule.com" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Yenikule İnşaat | Modern Mimari ve Güvenilir Yaşam Alanları" />
+  <meta name="twitter:description" content="Yenikule İnşaat; konut, ticari alan ve gayrimenkul projelerinde modern mimari, güvenilir mühendislik ve kaliteli yaşam alanları sunar." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    @keyframes scrollMove {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+  </style>
+</head>
+<body class="bg-cream text-dark-bg font-sans">
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur supports-[backdrop-filter]:bg-cream/60 border-b border-border-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a class="text-xl font-bold text-dark-bg hover:text-anthracite transition-colors" href="/">YENİKULE</a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a class="text-sm tracking-wide text-dark-bg hover:text-beige-accent transition-colors duration-300 relative group" href="/">
+            Ana Sayfa
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-beige-accent group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a class="text-sm tracking-wide text-dark-bg hover:text-beige-accent transition-colors duration-300 relative group" href="/about.html">
+            Hakkımızda
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-beige-accent group-hover:w-full transition-all duration-300"></span>
+          </a>
+          <a class="text-sm tracking-wide text-dark-bg hover:text-beige-accent transition-colors duration-300 relative group" href="/contact.html">
+            İletişim
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-beige-accent group-hover:w-full transition-all duration-300"></span>
+          </a>
+        </nav>
+        <div class="hidden md:flex">
+          <a class="font-medium transition-all duration-300 inline-block text-center btn-primary px-4 py-2 text-sm" href="/contact.html">Teklif Al</a>
+        </div>
+        <button class="md:hidden p-2 text-dark-bg" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-nav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-nav" class="md:hidden border-t border-border-light bg-cream" style="display: none;">
+      <nav class="px-4 py-4 space-y-1">
+        <a href="/" class="block text-dark-bg hover:text-beige-accent transition-colors py-4 text-base font-medium border-b border-border-light last:border-b-0 w-full">Ana Sayfa</a>
+        <a href="/about.html" class="block text-dark-bg hover:text-beige-accent transition-colors py-4 text-base font-medium border-b border-border-light last:border-b-0 w-full">Hakkımızda</a>
+        <a href="/contact.html" class="block text-dark-bg hover:text-beige-accent transition-colors py-4 text-base font-medium border-b border-border-light last:border-b-0 w-full">İletişim</a>
+        <div class="pt-3">
+          <a href="/contact.html" class="font-medium transition-all duration-300 inline-block text-center btn-primary px-6 py-3 text-base w-full">Teklif Al</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Scroll-driven Parallax Hero Section -->
+    <div id="hero-scroll-container" style="min-height: 200vh; position: relative;">
+      <div class="sticky top-0 h-screen overflow-hidden bg-[#07090d]">
+        <!-- Skeleton Image Layer -->
+        <div id="hero-image-skeleton" class="absolute inset-0 flex items-end justify-center transition-transform duration-75 ease-out" style="transform: scale(1.0) translateY(0%); transform-origin: bottom center;">
+          <img src="/images/hero-skeleton.png" alt="Bina iskelet yapısı" class="object-contain p-2 md:pt-4 md:px-6 md:pb-0" style="width: 100% !important; height: 100% !important; object-fit: contain; object-position: bottom; filter: brightness(0.82) saturate(0.6);" />
+        </div>
+        <!-- Final Image Layer -->
+        <div id="hero-image-final" class="absolute inset-0 flex items-end justify-center transition-transform duration-75 ease-out" style="transform: scale(1.06) translateY(2%); opacity: 0; transform-origin: bottom center;">
+          <img src="/images/hero-final.webp" alt="Tamamlanmış bina" class="object-contain p-2 md:pt-4 md:px-6 md:pb-0" style="width: 100% !important; height: 100% !important; object-fit: contain; object-position: bottom; filter: brightness(0.88) saturate(1.05);" />
+        </div>
+        <!-- Gradient Overlay -->
+        <div id="hero-gradient-overlay" class="absolute inset-0 bg-gradient-to-b from-[#07090d]/80 via-[#07090d]/40 to-[#07090d]/70" style="opacity: 0.58;"></div>
+        <!-- Radial Overlay -->
+        <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 90% 90% at 50% 50%, transparent 55%, rgba(0,0,0,0.55) 100%);"></div>
+        
+        <!-- Hero Text & Controls Content -->
+        <div id="hero-text-content" class="absolute inset-0 z-20 flex flex-col items-center justify-start md:justify-center text-center px-6 pt-12 md:pt-0 pb-16 transition-transform duration-75 ease-out">
+          <span class="block mb-6 text-[#C9A96E] font-semibold uppercase tracking-[0.48em]" style="font-size: 0.62rem;">Yenikule İnşaat</span>
+          <h1 class="font-serif text-white leading-[1.05] mb-6 max-w-4xl" style="font-size: clamp(2.6rem, 7.5vw, 5.6rem);">
+            Yaşam Alanlarını<br />Geleceğe <span style="background: linear-gradient(118deg, #B8935A 0%, #FFE4A0 45%, #C9A96E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Taşıyoruz</span>
+          </h1>
+          <p class="text-slate-300/80 max-w-lg leading-relaxed mb-12" style="font-size: clamp(0.9rem, 1.9vw, 1.05rem);">
+            Modern mimariyi güvenilir mühendislik ve yüksek yaşam standartlarıyla birleştiriyoruz.
+          </p>
+          
+          <!-- Actions & Counters -->
+          <div id="hero-actions-container" class="flex flex-col items-center gap-10">
+            <a href="/contact.html" class="group relative px-9 py-3.5 text-xs font-bold tracking-[0.35em] uppercase text-[#C9A96E] border border-[#C9A96E]/60 rounded-xl overflow-hidden transition-all duration-500 hover:text-[#07090d] hover:border-[#C9A96E]">
+              <span class="absolute inset-0 translate-y-full group-hover:translate-y-0 bg-[#C9A96E] transition-transform duration-500"></span>
+              <span class="relative">İletişime Geç</span>
+            </a>
+            <div class="w-px h-8 bg-white/20"></div>
+            
+            <div class="grid grid-cols-3 gap-4 md:gap-16">
+              <div class="text-center">
+                <p class="font-bold text-white mb-1" style="font-size: clamp(1.4rem, 3vw, 2rem);">15+</p>
+                <p class="text-slate-400 uppercase tracking-[0.28em]" style="font-size: 0.58rem;">Yıl Deneyim</p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold text-white mb-1" style="font-size: clamp(1.4rem, 3vw, 2rem);">40+</p>
+                <p class="text-slate-400 uppercase tracking-[0.28em]" style="font-size: 0.58rem;">Tamamlanan Proje</p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold text-white mb-1" style="font-size: clamp(1.4rem, 3vw, 2rem);">250+</p>
+                <p class="text-slate-400 uppercase tracking-[0.28em]" style="font-size: 0.58rem;">Teslim Edilen Bölüm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Down Mouse Indicator -->
+        <div id="hero-scroll-indicator" class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-2">
+          <div class="w-5 h-8 border border-white/25 rounded-full flex items-start justify-center pt-1.5">
+            <div class="w-0.5 h-1.5 bg-white/40 rounded-full" style="animation: scrollMove 2s infinite ease-in-out;"></div>
+          </div>
+          <p class="text-white/30 tracking-[0.35em] uppercase" style="font-size: 0.52rem;">Kaydır</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro Section (Yenikule Yaklaşımı) -->
+    <section class="py-14 md:py-32 bg-cream overflow-hidden">
+      <div class="container-section">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+          <div class="reveal-on-scroll reveal-left">
+            <p class="text-label mb-6">YENİKULE YAKLAŞIMI</p>
+            <h2 class="heading-lg mb-6">Modern Mimari ile Geleceğe Bakmak</h2>
+            <div class="space-y-4 text-secondary-text leading-relaxed">
+              <p>Yenikule İnşaat olarak, her projede estetik, kalite ve uzun vadeli yatırım değerini birlikte düşünüyoruz. Modern mimarinin zarafeti ile güvenilir mühendisliği birleştirerek, yaşanacak mekanlar yaratıyoruz.</p>
+              <p>Yaşam alanlarını yalnızca inşa etmiyor, geleceğe değer katacak şekilde tasarlıyoruz. Sürdürülebilir tasarım ilkeleri, yüksek kaliteli malzeme seçimi ve detaylı proje yönetimi ile fark yaratıyoruz.</p>
+            </div>
+            <div class="mt-8 space-y-3">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-beige-accent flex-shrink-0">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span class="text-dark-bg font-medium">Güvenilir mühendislik</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-beige-accent flex-shrink-0">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span class="text-dark-bg font-medium">Yüksek kaliteli malzeme</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-beige-accent flex-shrink-0">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span class="text-dark-bg font-medium">Şeffaf proje yönetimi</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative hidden md:flex h-96 md:h-[500px] bg-gradient-to-br from-beige-accent/20 to-anthracite/10 rounded-lg items-center justify-center reveal-on-scroll reveal-right">
+            <div class="text-center space-y-4">
+              <div class="text-6xl">🏗️</div>
+              <p class="text-secondary-text font-medium">Mimari Tasarım &amp; İnşaat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (Kapsamlı Gayrimenkul Çözümleri - Dark BG) -->
+    <section class="py-14 md:py-32 bg-dark-bg overflow-hidden">
+      <div class="container-section">
+        <div class="mb-8 md:mb-16 reveal-on-scroll reveal-up-short">
+          <p class="text-label text-stone-light mb-4">HİZMETLERİMİZ</p>
+          <h2 class="heading-lg text-cream">Kapsamlı Gayrimenkul Çözümleri</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="group p-6 md:p-8 border border-border-light bg-cream transition-all duration-300 hover:border-dark-bg hover:shadow-lg rounded-2xl reveal-on-scroll reveal-up-short" style="transition-delay: 0s;">
+            <div class="mb-6 text-dark-bg group-hover:text-beige-accent transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house">
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Konut Projeleri</h3>
+            <p class="text-secondary-text leading-relaxed">Modern yaşam standartlarını yüksek mühendislikle birleştirerek tasarlanan konut projeleri.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+          <div class="group p-6 md:p-8 border border-border-light bg-cream transition-all duration-300 hover:border-dark-bg hover:shadow-lg rounded-2xl reveal-on-scroll reveal-up-short" style="transition-delay: 0.1s;">
+            <div class="mb-6 text-dark-bg group-hover:text-beige-accent transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2">
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                <path d="M10 6h4"></path>
+                <path d="M10 10h4"></path>
+                <path d="M10 14h4"></path>
+                <path d="M10 18h4"></path>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Ticari Alanlar</h3>
+            <p class="text-secondary-text leading-relaxed">İşletmelerin ihtiyaçlarına göre özelleştirilen, merkezi konumlarda premium ticari alanlar.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+          <div class="group p-6 md:p-8 border border-border-light bg-cream transition-all duration-300 hover:border-dark-bg hover:shadow-lg rounded-2xl reveal-on-scroll reveal-up-short" style="transition-delay: 0.2s;">
+            <div class="mb-6 text-dark-bg group-hover:text-beige-accent transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize2">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" x2="14" y1="3" y2="10"></line>
+                <line x1="3" x2="10" y1="21" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Kentsel Dönüşüm</h3>
+            <p class="text-secondary-text leading-relaxed">Mevcut yapıları yeniden tasarlayarak şehirleri daha yaşanabilir hale getiren dönüşüm projeleri.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+          <div class="group p-6 md:p-8 border border-border-light bg-cream transition-all duration-300 hover:border-dark-bg hover:shadow-lg rounded-2xl reveal-on-scroll reveal-up-short" style="transition-delay: 0.3s;">
+            <div class="mb-6 text-dark-bg group-hover:text-beige-accent transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake">
+                <path d="m11 17 2 2a1 1 0 1 0 3-3"></path>
+                <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path>
+                <path d="m21 3 1 11h-2"></path>
+                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path>
+                <path d="M3 4h8"></path>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Gayrimenkul Satış &amp; Kiralama</h3>
+            <p class="text-secondary-text leading-relaxed">Profesyonel danışmanlık ve doğru değerlendirme ile gayrimenkul alım satım ve kiralama hizmetleri.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (Sunduğumuz Hizmetler - Cream BG) -->
+    <section class="py-14 md:py-32 bg-cream overflow-hidden">
+      <div class="container-section">
+        <div class="mb-8 md:mb-12 reveal-on-scroll reveal-up-short">
+          <p class="text-label mb-4">HİZMETLERİMİZ</p>
+          <h2 class="heading-lg">Sunduğumuz Hizmetler</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-border-light bg-white hover:border-dark-bg hover:shadow-xl transition-all duration-300 cursor-default reveal-on-scroll reveal-up-short" style="transition-delay: 0s;">
+            <div class="w-20 h-20 rounded-2xl bg-dark-bg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house text-beige-accent">
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Konut Projeleri</h3>
+            <p class="text-secondary-text text-sm leading-relaxed">Modern yaşam standartlarını yüksek mühendislikle birleştirerek tasarlanan konut projeleri.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent rounded-full group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+          <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-border-light bg-white hover:border-dark-bg hover:shadow-xl transition-all duration-300 cursor-default reveal-on-scroll reveal-up-short" style="transition-delay: 0.1s;">
+            <div class="w-20 h-20 rounded-2xl bg-dark-bg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 text-beige-accent">
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                <path d="M10 6h4"></path>
+                <path d="M10 10h4"></path>
+                <path d="M10 14h4"></path>
+                <path d="M10 18h4"></path>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Ticari Alanlar</h3>
+            <p class="text-secondary-text text-sm leading-relaxed">İşletmelerin ihtiyaçlarına göre özelleştirilen, merkezi konumlarda premium ticari alanlar.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent rounded-full group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+          <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-border-light bg-white hover:border-dark-bg hover:shadow-xl transition-all duration-300 cursor-default reveal-on-scroll reveal-up-short" style="transition-delay: 0.2s;">
+            <div class="w-20 h-20 rounded-2xl bg-dark-bg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize2 text-beige-accent">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" x2="14" y1="3" y2="10"></line>
+                <line x1="3" x2="10" y1="21" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Kentsel Dönüşüm</h3>
+            <p class="text-secondary-text text-sm leading-relaxed">Mevcut yapıları yeniden tasarlayarak şehirleri daha yaşanabilir hale getiren dönüşüm projeleri.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent rounded-full group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+          <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl border border-border-light bg-white hover:border-dark-bg hover:shadow-xl transition-all duration-300 cursor-default reveal-on-scroll reveal-up-short" style="transition-delay: 0.3s;">
+            <div class="w-20 h-20 rounded-2xl bg-dark-bg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake text-beige-accent">
+                <path d="m11 17 2 2a1 1 0 1 0 3-3"></path>
+                <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path>
+                <path d="m21 3 1 11h-2"></path>
+                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path>
+                <path d="M3 4h8"></path>
+              </svg>
+            </div>
+            <h3 class="heading-md text-dark-bg mb-3">Gayrimenkul Satış &amp; Kiralama</h3>
+            <p class="text-secondary-text text-sm leading-relaxed">Profesyonel danışmanlık ve doğru değerlendirme ile gayrimenkul alım satım ve kiralama hizmetleri.</p>
+            <div class="mt-6 h-1 w-0 bg-beige-accent rounded-full group-hover:w-12 transition-all duration-300"></div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section (Güven, Kalite ve Zamansız Mimari - Dark BG) -->
+    <section class="py-14 md:py-32 bg-dark-bg overflow-hidden">
+      <div class="container-section">
+        <div class="mb-8 md:mb-12 reveal-on-scroll reveal-up-short">
+          <h2 class="heading-lg text-cream mb-2">Güven, Kalite ve Zamansız Mimari</h2>
+          <p class="text-stone-light text-lg">Yenikule İnşaat ile yatırım yapmak, gelecek ile paydaş olmak demektir.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+          
+          <div class="pb-8 border-b border-beige-accent reveal-on-scroll reveal-up-short" style="transition-delay: 0s;">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 bg-beige-accent rounded-full flex items-center justify-center flex-shrink-0 text-dark-bg font-bold text-base md:text-lg">1</div>
+              <div>
+                <h3 class="heading-md text-cream mb-3">Güçlü Mühendislik</h3>
+                <p class="text-stone-light leading-relaxed">Türkiye'nin en deneyimli mühendis kadrosu ve teknolojisi ile projelendirme.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pb-8 border-b border-beige-accent reveal-on-scroll reveal-up-short" style="transition-delay: 0.1s;">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 bg-beige-accent rounded-full flex items-center justify-center flex-shrink-0 text-dark-bg font-bold text-base md:text-lg">2</div>
+              <div>
+                <h3 class="heading-md text-cream mb-3">Doğru Lokasyon</h3>
+                <p class="text-stone-light leading-relaxed">Stratejik konumlandırma ve konum değerlendirmesi yaparak yatırım değerini maksimize etme.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pb-8 border-b border-beige-accent reveal-on-scroll reveal-up-short" style="transition-delay: 0.2s;">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 bg-beige-accent rounded-full flex items-center justify-center flex-shrink-0 text-dark-bg font-bold text-base md:text-lg">3</div>
+              <div>
+                <h3 class="heading-md text-cream mb-3">Kaliteli Malzeme</h3>
+                <p class="text-stone-light leading-relaxed">Dünya standartlarında, sertifikalı malzeme ve tedarikçiler kullanma.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pb-8 border-b border-beige-accent reveal-on-scroll reveal-up-short" style="transition-delay: 0.3s;">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 md:w-12 md:h-12 bg-beige-accent rounded-full flex items-center justify-center flex-shrink-0 text-dark-bg font-bold text-base md:text-lg">4</div>
+              <div>
+                <h3 class="heading-md text-cream mb-3">Şeffaf Yönetim</h3>
+                <p class="text-stone-light leading-relaxed">Müşterilerine her aşamada güncellemeler ve şeffaf proje yönetimi.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section (Proje Yönetim Aşamaları - Dark BG) -->
+    <section class="py-14 md:py-32 bg-dark-bg overflow-hidden">
+      <div class="container-section">
+        <div class="mb-8 md:mb-12 reveal-on-scroll reveal-up-short">
+          <p class="text-label text-stone-light mb-4">SÜREÇ</p>
+          <h2 class="heading-lg text-cream">Proje Yönetim Aşamaları</h2>
+        </div>
+        
+        <!-- Desktop Timeline View -->
+        <div class="hidden md:block">
+          <div class="relative">
+            <div class="absolute top-1/4 left-0 right-0 h-1 bg-gradient-to-r from-beige-accent via-beige-accent to-transparent"></div>
+            <div class="grid grid-cols-4 gap-4 relative z-10">
+              
+              <div class="text-center reveal-on-scroll reveal-up-short" style="transition-delay: 0s;">
+                <div class="w-16 h-16 bg-beige-accent rounded-full flex items-center justify-center mx-auto mb-6 text-dark-bg font-bold text-xl">1</div>
+                <h3 class="heading-md text-cream mb-3">Keşif</h3>
+                <p class="text-stone-light text-sm">Proje alanının araştırılması ve planlanması</p>
+              </div>
+              
+              <div class="text-center reveal-on-scroll reveal-up-short" style="transition-delay: 0.15s;">
+                <div class="w-16 h-16 bg-beige-accent rounded-full flex items-center justify-center mx-auto mb-6 text-dark-bg font-bold text-xl">2</div>
+                <h3 class="heading-md text-cream mb-3">Projelendirme</h3>
+                <p class="text-stone-light text-sm">Mimarlar tarafından detaylı tasarım ve harita</p>
+              </div>
+              
+              <div class="text-center reveal-on-scroll reveal-up-short" style="transition-delay: 0.3s;">
+                <div class="w-16 h-16 bg-beige-accent rounded-full flex items-center justify-center mx-auto mb-6 text-dark-bg font-bold text-xl">3</div>
+                <h3 class="heading-md text-cream mb-3">İnşaat</h3>
+                <p class="text-stone-light text-sm">Profesyonel mühendislik ve uzman ekip ile yapı inşaatı</p>
+              </div>
+              
+              <div class="text-center reveal-on-scroll reveal-up-short" style="transition-delay: 0.45s;">
+                <div class="w-16 h-16 bg-beige-accent rounded-full flex items-center justify-center mx-auto mb-6 text-dark-bg font-bold text-xl">4</div>
+                <h3 class="heading-md text-cream mb-3">Teslim</h3>
+                <p class="text-stone-light text-sm">Kalite kontrol ve müşteriye teslim edilmesi</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile Vertical View -->
+        <div class="md:hidden space-y-6">
+          
+          <div class="flex gap-4 pb-6 border-b border-border-light last:border-b-0 reveal-on-scroll reveal-left-short" style="transition-delay: 0s;">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 bg-beige-accent rounded-full flex items-center justify-center text-dark-bg font-bold text-base flex-shrink-0">1</div>
+              <div class="w-1 h-10 bg-beige-accent mt-3"></div>
+            </div>
+            <div class="pt-1.5 pb-3">
+              <h3 class="font-serif text-lg text-cream mb-1">Keşif</h3>
+              <p class="text-stone-light text-sm">Proje alanının araştırılması ve planlanması</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4 pb-6 border-b border-border-light last:border-b-0 reveal-on-scroll reveal-left-short" style="transition-delay: 0.15s;">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 bg-beige-accent rounded-full flex items-center justify-center text-dark-bg font-bold text-base flex-shrink-0">2</div>
+              <div class="w-1 h-10 bg-beige-accent mt-3"></div>
+            </div>
+            <div class="pt-1.5 pb-3">
+              <h3 class="font-serif text-lg text-cream mb-1">Projelendirme</h3>
+              <p class="text-stone-light text-sm">Mimarlar tarafından detaylı tasarım ve harita</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4 pb-6 border-b border-border-light last:border-b-0 reveal-on-scroll reveal-left-short" style="transition-delay: 0.3s;">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 bg-beige-accent rounded-full flex items-center justify-center text-dark-bg font-bold text-base flex-shrink-0">3</div>
+              <div class="w-1 h-10 bg-beige-accent mt-3"></div>
+            </div>
+            <div class="pt-1.5 pb-3">
+              <h3 class="font-serif text-lg text-cream mb-1">İnşaat</h3>
+              <p class="text-stone-light text-sm">Profesyonel mühendislik ve uzman ekip ile yapı inşaatı</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-4 pb-6 border-b border-border-light last:border-b-0 reveal-on-scroll reveal-left-short" style="transition-delay: 0.45s;">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 bg-beige-accent rounded-full flex items-center justify-center text-dark-bg font-bold text-base flex-shrink-0">4</div>
+            </div>
+            <div class="pt-1.5 pb-3">
+              <h3 class="font-serif text-lg text-cream mb-1">Teslim</h3>
+              <p class="text-stone-light text-sm">Kalite kontrol ve müşteriye teslim edilmesi</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section (Cream BG) -->
+    <section class="py-14 md:py-24 bg-cream overflow-hidden">
+      <div class="container-section">
+        <div class="text-center space-y-6 md:space-y-8 reveal-on-scroll reveal-up-short">
+          <h2 class="heading-lg text-dark-bg max-w-2xl mx-auto">Yeni Projeniz veya Yatırım Planınız İçin Bizimle Görüşün</h2>
+          <p class="text-secondary-text text-lg max-w-2xl mx-auto">Yenikule İnşaat ekibi, gayrimenkul yatırımlarınızda her adımda yanınızda olacaktır. Başlamak için iletişime geçin.</p>
+          <div>
+            <a class="font-medium transition-all duration-300 inline-block text-center btn-primary px-8 py-4 text-lg" href="/contact.html">İletişime Geç</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark-bg text-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 mb-8 md:mb-12">
+        <div class="col-span-2 md:col-span-1 space-y-4">
+          <h3 class="text-xl font-bold">Yenikule İnşaat</h3>
+          <p class="text-stone-light text-sm leading-relaxed">Modern mimari ve güvenilir mühendislik ile yaşam alanlarını geleceğe taşıyoruz.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-label">Hızlı Bağlantılar</h4>
+          <ul class="space-y-3">
+            <li><a class="text-stone-light hover:text-cream transition-colors text-sm" href="/">Ana Sayfa</a></li>
+            <li><a class="text-stone-light hover:text-cream transition-colors text-sm" href="/about.html">Hakkımızda</a></li>
+            <li><a class="text-stone-light hover:text-cream transition-colors text-sm" href="/contact.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-label">Hizmetler</h4>
+          <ul class="space-y-3 text-sm text-stone-light">
+            <li><a href="/contact.html" class="hover:text-cream transition-colors">Konut Projeleri</a></li>
+            <li><a href="/contact.html" class="hover:text-cream transition-colors">Ticari Alanlar</a></li>
+            <li><a href="/contact.html" class="hover:text-cream transition-colors">Kentsel Dönüşüm</a></li>
+            <li><a href="/contact.html" class="hover:text-cream transition-colors">Gayrimenkul</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-label">İletişim</h4>
+          <ul class="space-y-3 text-sm text-stone-light">
+            <li><a href="mailto:info@yenikule.com" class="hover:text-cream transition-colors">info@yenikule.com</a></li>
+            <li><a href="tel:+90 538 414 96 81" class="hover:text-cream transition-colors">+90 538 414 96 81</a></li>
+            <li class="text-stone-light">Karlıbayır Mah. Selçuklu Caddesi No:79</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-border-light pt-6 md:pt-12 flex flex-col items-center md:flex-row md:justify-between gap-4">
+        <p class="text-stone-light text-sm">© 2026 Yenikule İnşaat. Tüm hakları saklıdır.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-stone-light hover:text-cream transition-colors text-sm" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#" class="text-stone-light hover:text-cream transition-colors text-sm" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="#" class="text-stone-light hover:text-cream transition-colors text-sm" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#" class="text-stone-light hover:text-cream transition-colors text-sm" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
